@@ -1,4 +1,4 @@
-# Qualcomm-Cloud-AI-Development-Environment-with-SAGE-Waggle-Sensor-Platform
+# Qualcomm Cloud AI Development Environment with SAGE Waggle Sensor Platform
 This is an introduction repo that kickstarts development on Waggle Sensor platform using Qualcomm Cloud SDK.
 
 ## Waggle Sensor Platform
@@ -11,14 +11,19 @@ There is a [tool](https://github.com/hpeliuhan/blade-image-deployment.git) that 
 ### Bare metal 
 Developer has the option to start developing code on baremetal hardware with virtual environment. Users have to request or gain SDK access through [Qualcomm portal](https://www.qualcomm.com/products/technology/processors/cloud-artificial-intelligence/cloud-ai-100#Software).
 A simple illustration object detection sample can be found [here](https://github.com/hpeliuhan/qualcomm-docker-general_inference).
-A general step to start the developement will be:
-1. Create python3.8 venv and activate it. python3.8 -m venv qaicdev source qaicdev/bin/activate
-2. Install qaic pip install /opt/qti-aic/dev/lib/x86_64/qaic-0.0.1-py3-none-any.whl
-3. Install Jupyter notebook pip install notebook 
-4. Run the notebook jupyter notebook --allow-root --ip 0.0.0.0 --no-browser
+A general step to start the development will be:
+
+1. Create python3.8 venv and activate it:
+   `` python3.8 -m venv qaicdev source qaicdev/bin/activate
+2. Install qaic:
+   `` pip install /opt/qti-aic/dev/lib/x86_64/qaic-0.0.1-py3-none-any.whl
+3. Install Jupyter notebook:
+   `` pip install notebook
+4. Run the notebook:
+   `` jupyter notebook --allow-root --ip 0.0.0.0 --no-browser
 
 ### Docker
-Developer can also pull a driver ready docker from [here](https://hub.docker.com/repository/docker/hpeliuhan/qualcomm-ai100/general )
+Developer can also ask for ready docker by contacting the author)
 Unlike NVIDIA docker device assignment "docker run --gpus all", Qualcomm GPU uses device assignment by "docker run --device=/dev/qaic_aic100_x" where “qaic_aic100_x” is the name of the presented device.
 
 A [trafficstate](https://github.com/hpeliuhan/plugin-trafficstate) application based on Yolov7 and a [clip](https://github.com/hpeliuhan/clip-app) application based on OpenAI CLIP from Waggle Sensor are modified using Qualcomm Cloud AI SDK can be good starting point for reference.
