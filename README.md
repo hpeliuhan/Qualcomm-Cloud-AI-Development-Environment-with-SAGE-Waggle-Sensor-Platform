@@ -23,7 +23,7 @@ A general step to start the development will be:
    ` jupyter notebook --allow-root --ip 0.0.0.0 --no-browser`
 
 ### Docker
-Developer can also ask for ready docker by contacting the author)
+Developer can also ask for ready docker by contacting the author.
 Unlike NVIDIA docker device assignment "docker run --gpus all", Qualcomm GPU uses device assignment by "docker run --device=/dev/qaic_aic100_x" where “qaic_aic100_x” is the name of the presented device.
 
 A [trafficstate](https://github.com/hpeliuhan/plugin-trafficstate) application based on Yolov7 and a [clip](https://github.com/hpeliuhan/clip-app) application based on OpenAI CLIP from Waggle Sensor are modified using Qualcomm Cloud AI SDK can be good starting point for reference.
