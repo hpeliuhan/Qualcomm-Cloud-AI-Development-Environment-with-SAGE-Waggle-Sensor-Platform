@@ -14,13 +14,13 @@ A simple illustration object detection sample can be found [here](https://github
 A general step to start the development will be:
 
 1. Create python3.8 venv and activate it:
-   `` python3.8 -m venv qaicdev source qaicdev/bin/activate
+   ` python3.8 -m venv qaicdev source qaicdev/bin/activate`
 2. Install qaic:
-   `` pip install /opt/qti-aic/dev/lib/x86_64/qaic-0.0.1-py3-none-any.whl
+   ` pip install /opt/qti-aic/dev/lib/x86_64/qaic-0.0.1-py3-none-any.whl`
 3. Install Jupyter notebook:
-   `` pip install notebook
+   ` pip install notebook`
 4. Run the notebook:
-   `` jupyter notebook --allow-root --ip 0.0.0.0 --no-browser
+   ` jupyter notebook --allow-root --ip 0.0.0.0 --no-browser`
 
 ### Docker
 Developer can also ask for ready docker by contacting the author)
