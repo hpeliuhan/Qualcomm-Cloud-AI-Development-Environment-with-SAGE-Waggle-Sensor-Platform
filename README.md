@@ -6,7 +6,8 @@ This is an introduction repo that kickstarts development on Waggle Sensor platfo
 Waggle Sensor has a driver ready operating system [repo](https://github.com/waggle-sensor/blade-image) that can be scale out to multiple edge blade systems. Applications are deployed and distributed via docker containers.
 To build a qualcomm GPU compatible ISO, developer can run "./build.sh -q" to build the ISO.
 There is a [tool](https://github.com/hpeliuhan/blade-image-deployment.git) that help system engineers to perform multi node deployment. It's using redfish restful API to deploy the image to blades through side band managment interfaces.
-A general flow to have the qualcomm gpu running on waggle platform is as follow:
+A general flow to have the qualcomm gpu running on waggle platform is shown in the follow picture:
+
 ![image](https://github.com/hpeliuhan/Qualcomm-Cloud-AI-Development-Environment-with-SAGE-Waggle-Sensor-Platform/assets/60847725/da6e9df0-ebd8-4b55-b079-4bdab6cc229c)
 
 ## Qualcomm Cloud SDK
