@@ -6,6 +6,8 @@ This is an introduction repo that kickstarts development on Waggle Sensor platfo
 Waggle Sensor has a driver ready operating system [repo](https://github.com/waggle-sensor/blade-image) that can be scale out to multiple edge blade systems. Applications are deployed and distributed via docker containers.
 To build a qualcomm GPU compatible ISO, developer can run "./build.sh -q" to build the ISO.
 There is a [tool](https://github.com/hpeliuhan/blade-image-deployment.git) that help system engineers to perform multi node deployment. It's using redfish restful API to deploy the image to blades through side band managment interfaces.
+A general flow to have the qualcomm gpu running on waggle platform is as follow:
+![image](https://github.com/hpeliuhan/Qualcomm-Cloud-AI-Development-Environment-with-SAGE-Waggle-Sensor-Platform/assets/60847725/da6e9df0-ebd8-4b55-b079-4bdab6cc229c)
 
 ## Qualcomm Cloud SDK
 ### Bare metal 
@@ -21,7 +23,6 @@ A general step to start the development will be:
    ` pip install notebook`
 4. Run the notebook:
    ` jupyter notebook --allow-root --ip 0.0.0.0 --no-browser`
-
 ### Docker
 Developer can also ask for ready docker by contacting the author.
 Unlike NVIDIA docker device assignment "docker run --gpus all", Qualcomm GPU uses device assignment by "docker run --device=/dev/qaic_aic100_x" where “qaic_aic100_x” is the name of the presented device.
